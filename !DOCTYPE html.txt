@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic HTML Buttons Example</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Button Demo</h2>
+
+    <button onclick="showMessage()">Click Me</button>
+    <button onclick="changeColor()">Change Background</button>
+    <button onclick="resetPage()">Reset</button>
+
+    <p id="message"></p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML = "You clicked the button!";
+        }
+
+        function changeColor() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+
+        function resetPage() {
+            document.body.style.backgroundColor = "white";
+            document.getElementById("message").innerHTML = "";
+        }
+    </script>
+
+</body>
+</html>
